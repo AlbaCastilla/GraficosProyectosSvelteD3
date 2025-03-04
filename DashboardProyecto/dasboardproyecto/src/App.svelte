@@ -16,7 +16,6 @@
   </div>
 
   {#if $selectedComponent === 'facturas'}
-    <GraficosFacturas />
   {:else}
     <GraficosProyectos />
   {/if}

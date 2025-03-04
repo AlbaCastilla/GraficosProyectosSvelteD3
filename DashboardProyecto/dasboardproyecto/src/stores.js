@@ -181,6 +181,8 @@ export async function fetchFacturasCount() {
     data.push(factura)
   }))
 
+  facturasDocs.set(data)  
+
   console.log(data)
 
 }

@@ -1,8 +1,9 @@
 <script>
   import * as d3 from "d3";
   import { onMount } from "svelte";
+  import { facturasDocs, fetchFacturasCount } from "../stores";
 
-  let data_synthetic = [
+  /*let data_synthetic = [
     {
       valor: "546",
       emailUsuario: "fer@gmail.com",
@@ -128,9 +129,20 @@
 
   onMount(() => {
     buildChart(data_synthetic);
-  });
+  }); */
 
-  function buildChart(data) {
+  onMount(async () => {
+    await fetchFacturasCount();
+
+    // Suscribirse al store de tecnologías para actualizar el gráfico
+    facturasDocs.subscribe((data) => {
+        buildChart(data);
+    });
+    
+});
+
+function buildChart(data) {
+      console.log("HOLA ", data)
     const svg = d3.select("#iva-chart");
     const height = 300;
     const width = 300;
