@@ -167,6 +167,8 @@ function buildChart(data) {
         return x;
       })
       .attr("y", (d) => scaleY(d.iva))
+      .attr("rx", 5)
+      .attr("ry", 5)
       .attr("width", barWidth)
       .attr("height", (d) => height - scaleY(d.iva))
       .attr("fill", (d) => (d.iva > 21 ? "#00ff00" : "#ff0000"))
