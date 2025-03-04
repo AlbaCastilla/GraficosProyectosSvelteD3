@@ -1,4 +1,4 @@
-<!-- <!-- <script>
+<!--  <script>
     import { onMount } from 'svelte';
     import { tecnologiasById, fetchTecnologiasCount } from '../stores';
     import * as d3 from 'd3';

@@ -1,12 +1,14 @@
 <script>
     import CuentaProyectos from './cuentaProyectos.svelte';
+  import GraficoGenero from './graficoGenero.svelte';
+  import GraficosFacturas from './graficosFacturas.svelte';
     import TecnologiasGrafico from './TecnologiasGrafico.svelte';
 </script>
     
 <div class="parent">
     <div class="div1"><CuentaProyectos /></div>
-    <div class="div2"></div>
-    <div class="div3"></div>
+    <div class="div2"><GraficosFacturas/></div>
+    <div class="div3"><GraficoGenero/></div>
     <div class="div4"><TecnologiasGrafico/></div>
 </div>
 

@@ -142,9 +142,48 @@ export const tecnologiasCount = writable({});
 // Crear un store para almacenar los documentos completos de tecnologías
 export const tecnologiasDocs = writable({});
 
+export const generoDocs = writable([]);
+
+export const facturasDocs = writable([]);
+
 export let tecnologiasUnicas = new Set();
 
 export let tecnologiasById = writable([]);
+
+// Funcion para obtener el recuento de genero
+export async function fetchGeneroCount() {
+  console.log("genero")
+
+  const generoCollection = collection(db, "genero")
+  const querySnapshot = await getDocs(generoCollection)
+
+  const data = []
+
+  querySnapshot.forEach((doc) => {
+    const genero = doc.data()
+    data.push(genero)
+  })
+
+  generoDocs.set(data)
+}
+
+export async function fetchFacturasCount() {
+
+  console.log("factura")
+
+  const facturasCollection = collection(db, "facturas")
+  const querySnapshot = await getDocs(facturasCollection)
+
+  const data = []
+
+  querySnapshot.forEach((doc => {
+    const factura = doc.data()
+    data.push(factura)
+  }))
+
+  console.log(data)
+
+}
 
 // Función para obtener el recuento de tecnologías usadas en todos los proyectos
 export async function fetchTecnologiasCount() {
