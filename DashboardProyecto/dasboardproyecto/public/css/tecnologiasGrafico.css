@@ -1,0 +1,61 @@
+.chart-container {
+    width: 100%;
+    height: 400px;
+}
+
+.filtros-tecnologias {
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    align-items: center;
+    border-radius: 10px; /* Bordes redondeados */
+    color: #64a6fc;
+    left: 47%;
+    top: 90%;
+}
+
+.filtros-tecnologias label {
+    font-size: 1rem;
+    color: #333;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.filtros-tecnologias label input {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.filtros-tecnologias label:hover {
+    color: #007BFF;
+}
+
+.filtros-tecnologias label input:checked + span {
+    color: #007BFF;
+}
+
+.filtros-tecnologias label input:focus {
+    outline: none;
+}
+
+.filtros-tecnologias label input[type="radio"] {
+    accent-color: #007BFF; /* Cambia el color del radio button */
+}
+
+.filtros-tecnologias label input[type="radio"]:checked {
+    background-color: #007BFF;
+}
+
+
+#iva-chart {
+    height: 300px;
+    width: 300px;
+    margin-left: 6%;
+}
