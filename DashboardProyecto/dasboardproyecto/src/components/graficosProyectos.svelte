@@ -24,12 +24,20 @@
 
   .div1 {
     grid-area: 3 / 2 / 6 / 5;
-    background-color: #ff6347; /* Rojo Tomate */
+    border: 2px solid #ddd; /* Color de borde más suave */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    padding: 10px; /* Espacio interno */
+    background: rgba(240, 240, 240, 0.5); /* Gris claro con transparencia */
   }
 
   .div2 {
     grid-area: 2 / 6 / 7 / 15;
-    background-color: #4682b4; /* Azul Acero */
+    border: 2px solid #ddd; /* Color de borde más suave */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    padding: 10px; /* Espacio interno */
+    background: rgba(240, 240, 240, 0.5); /* Gris claro con transparencia */
   }
 
   .div3 {
@@ -38,8 +46,12 @@
   }
 
   .div4 {
-    grid-area: 9 / 2 / 17 / 11;
-    background-color: #ffcc00; /* Amarillo */
+    grid-area: 9 / 2 / 16 / 14;
+    border: 2px solid #ddd; /* Color de borde más suave */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    padding: 10px; /* Espacio interno */
+    background: rgba(240, 240, 240, 0.5); /* Gris claro con transparencia */
   }
 
   /* Asegura que las divisiones tengan un tamaño mínimo */
