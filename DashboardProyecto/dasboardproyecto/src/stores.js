@@ -187,6 +187,33 @@ export async function fetchFacturasCount() {
 
 }
 
+export const usoFechas = writable([]);
+
+export async function fetchUsoFechas() {
+  console.log("Obteniendo fechas de usoAngular...");
+
+  const usoCollection = collection(db, "UsoAngular");
+  const querySnapshot = await getDocs(usoCollection);
+
+  console.log("Documentos encontrados:", querySnapshot.size); // Cuántos documentos hay
+
+  const fechas = [];
+
+  querySnapshot.forEach((doc) => {
+      const data = doc.data();
+      console.log("Documento:", doc.id, data); // Ver todos los campos del documento
+
+      if (data.uso) {
+          console.log("Campo 'uso' encontrado:", data.uso);
+          const fecha = data.uso.split(" ")[0]; 
+          fechas.push(fecha);
+      }
+  });
+
+  usoFechas.set(fechas);
+  console.log("📅 Fechas extraídas:", fechas);
+}
+
 // Función para obtener el recuento de tecnologías usadas en todos los proyectos
 export async function fetchTecnologiasCount() {
     const querySnapshot = await getDocs(collection(db, "proyectos"));
