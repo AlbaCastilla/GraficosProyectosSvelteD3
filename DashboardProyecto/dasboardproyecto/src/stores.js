@@ -136,6 +136,29 @@ export async function fetchProyectosCount() {
   proyectosCount.set(querySnapshot.size);  // Establecer el tamaño de la colección
 }
 
+export const contarFactourasCount = writable(0);
+
+export async function fetchContarFacturasCount() {
+  const querySnapshot = await getDocs(collection(db, "facturas"));
+  contarFactourasCount.set(querySnapshot.size);  // Establecer el tamaño de la colección
+}
+
+export const contarFactourasReCount = writable(0);
+
+export async function fetchContarFacturasReCount() {
+  const querySnapshot = await getDocs(collection(db, "facturasRe"));
+  contarFactourasReCount.set(querySnapshot.size);  // Establecer el tamaño de la colección
+}
+
+export const contarUsuariosCount = writable(0);
+
+export async function fetchContarUsuariosCount() {
+  const querySnapshot = await getDocs(collection(db, "usuarios"));
+  contarUsuariosCount.set(querySnapshot.size);  // Establecer el tamaño de la colección
+}
+
+
+
 // Crear un store para almacenar el recuento de tecnologías
 export const tecnologiasCount = writable({});
 
