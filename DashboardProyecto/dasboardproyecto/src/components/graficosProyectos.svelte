@@ -46,7 +46,7 @@
   }
 
   .div4 {
-    grid-area: 9 / 2 / 16 / 13;
+    grid-area: 9 / 2 / 16 / 14;
     border: 2px solid #ddd; /* Color de borde más suave */
     border-radius: 10px; /* Bordes redondeados */
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */

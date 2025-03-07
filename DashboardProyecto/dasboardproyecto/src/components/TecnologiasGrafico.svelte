@@ -260,7 +260,7 @@
          .attr('y', d => y(d[1]))
          .attr('width', x.bandwidth())
          .attr('height', d => height - y(d[1]))
-         .attr('fill', 'steelblue');
+         .attr('fill', '#5A9BFF');
 
         // Etiquetas
         g.selectAll('.bar-group')
