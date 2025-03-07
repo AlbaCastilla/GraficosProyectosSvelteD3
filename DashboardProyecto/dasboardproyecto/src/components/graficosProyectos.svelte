@@ -3,6 +3,7 @@
   import GraficoGenero from './graficoGenero.svelte';
   import GraficosFacturas from './graficosFacturas.svelte';
     import TecnologiasGrafico from './TecnologiasGrafico.svelte';
+    import GraficoFechas from './graficoFechas.svelte';
 </script>
     
 <div class="parent">
@@ -10,6 +11,7 @@
     <div class="div2"><GraficosFacturas/></div>
     <div class="div3"><GraficoGenero/></div>
     <div class="div4"><TecnologiasGrafico/></div>
+    <div class="div5"><GraficoFechas/></div>
 </div>
 
 <style>
@@ -54,8 +56,13 @@
     background: rgba(240, 240, 240, 0.5); /* Gris claro con transparencia */
   }
 
+  .div5 {
+    grid-area: 9 / 12 / 17 / 20; /* Ajusta el tamaño según necesidad */
+    background-color: #9370db; /* Lila */
+  }
+
   /* Asegura que las divisiones tengan un tamaño mínimo */
-  .div1, .div2, .div3, .div4 {
+  .div1, .div2, .div3, .div4, .div5 {
     min-width: 50px;
     min-height: 50px;
   }
