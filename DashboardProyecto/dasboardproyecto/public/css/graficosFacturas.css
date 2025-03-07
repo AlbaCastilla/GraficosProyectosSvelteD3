@@ -1,0 +1,56 @@
+.filtros {
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    right: 33%;
+    align-items: center;
+    top: 28%;
+    border-radius: 10px; /* Bordes redondeados */
+    color: #64a6fc;
+}
+
+.filtros label {
+    font-size: 1rem;
+    color: #333;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.filtros label input {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.filtros label:hover {
+    color: #007BFF;
+}
+
+.filtros label input:checked + span {
+    color: #007BFF;
+}
+
+.filtros label input:focus {
+    outline: none;
+}
+
+.filtros label input[type="radio"] {
+    accent-color: #007BFF; /* Cambia el color del radio button */
+}
+
+.filtros label input[type="radio"]:checked {
+    background-color: #007BFF;
+}
+
+
+#iva-chart {
+    height: 300px;
+    width: 300px;
+    margin-left: 6%;
+}

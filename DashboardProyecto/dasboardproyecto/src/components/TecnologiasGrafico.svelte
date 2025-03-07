@@ -284,8 +284,10 @@
     }
 </script>
 
+<link rel="stylesheet" href="/css/tecnologiasGrafico.css">
+
 <!-- Radio buttons para filtrar por ID -->
-<div>
+<div class="filtros-tecnologias">
     <label>
         <input type="radio" name="filter" on:change={() => updateChart(null)} checked>
         Mostrar Todo
@@ -299,10 +301,3 @@
 </div>
 
 <div class="chart-container"></div>
-
-<style>
-    .chart-container {
-        width: 100%;
-        height: 400px;
-    }
-</style>
