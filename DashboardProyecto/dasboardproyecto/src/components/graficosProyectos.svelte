@@ -19,6 +19,7 @@
 </div>
 
 <style>
+
 .parent {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Tres columnas */
@@ -134,9 +135,23 @@
   border-radius: 10px;
 }
 
-
 .div7 {
   grid-column: span 3;
+}
+
+@media (max-width: 768px) {
+  .parent {
+    grid-template-columns: 1fr; /* Una sola columna en móviles */
+    grid-auto-rows: auto; /* Altura automática */
+  }
+
+  .div2 {
+    grid-column: span 1; /* Ocupará toda la fila */
+  }
+
+  .div7 {
+    grid-column: span 1;
+  }
 }
 
 </style>
