@@ -81,6 +81,7 @@
 
   function updateChart(iva) {
     selectedIva = iva;
+    console.log(iva)
     buildChart();
   }
 </script>
@@ -89,12 +90,12 @@
 
 <div class="filtros">
   <label>
-    <input type="radio" name="filter" on:change={() => updateChart(null)} checked>
+    <input type="radio" name="filter2" on:change={() => updateChart(null)} checked>
     Mostrar Todo
   </label>
   {#each [...new Set(facturasData.map(d => d.iva))] as iva}
     <label>
-      <input type="radio" name="filter" on:change={() => updateChart(iva)}>
+      <input type="radio" name="filter2" on:change={() => updateChart(iva)}>
       {iva}%
     </label>
   {/each}

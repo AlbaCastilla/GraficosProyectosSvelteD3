@@ -7,11 +7,10 @@
     flex-direction: column;
     gap: 15px;
     position: absolute;
-    right: 33%;
     align-items: center;
-    top: 21%;
     border-radius: 10px; /* Bordes redondeados */
     color: #64a6fc;
+    left: 26%;
 }
 
 .filtros label {

@@ -280,6 +280,7 @@
 
     function updateChart(id) {
         selectedId = id;
+        console.log("tecs",id)
         createChart();
     }
 </script>

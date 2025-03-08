@@ -6,7 +6,6 @@
   import GraficosProyectos from './components/graficosProyectos.svelte';
   import { writable } from 'svelte/store';
 
-  let selectedComponent = writable('facturas');
 </script>
 
 <main>
