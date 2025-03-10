@@ -1,12 +1,8 @@
 .filtros {
     padding: 10px;
-    border-radius: 10px;
-    max-width: 200px;
-    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 15px;
-    position: absolute;
     align-items: center;
     border-radius: 10px; /* Bordes redondeados */
     color: #64a6fc;
