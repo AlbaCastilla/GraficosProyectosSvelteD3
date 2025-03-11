@@ -286,7 +286,9 @@
 </script>
 
 <link rel="stylesheet" href="/css/tecnologiasGrafico.css">
-
+<div style="text-align: center; font-size: 16px; font-weight: bold; margin-bottom: 10px; margin-top: 20px;">
+  Tecnologías usadas
+</div>
 <!-- Radio buttons para filtrar por ID -->
 <div class="filtros-tecnologias">
     <label>

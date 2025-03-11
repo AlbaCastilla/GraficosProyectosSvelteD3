@@ -2,15 +2,15 @@
   padding: 20px;
   border-radius: 8px;
   text-align: center;
-  background: rgba(240, 240, 240, 0.5); /* Gris claro con transparencia */
+  /*background: rgba(240, 240, 240, 0.5); /* Gris claro con transparencia */
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
 p {
-  font-size: 32px;
+  font-size: 30px;
   font-weight: bold;
 }

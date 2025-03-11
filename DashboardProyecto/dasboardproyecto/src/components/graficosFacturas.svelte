@@ -87,6 +87,9 @@
 </script>
 
 <link rel="stylesheet" href="/css/graficosFacturas.css">
+<!-- <div style="text-align: center; font-size: 16px; font-weight: bold; margin-bottom: 10px;">
+  Numero de facturas con iva específico
+</div>
 
 <div class="filtros">
   <label>
@@ -102,4 +105,30 @@
 </div>
 
 <svg id="iva-chart"></svg>
+ -->
+ <link rel="stylesheet" href="/css/graficosFacturas.css">
 
+ <div class="contenedor-grafico">
+   <div class="titulo-grafico">
+     Número de facturas con IVA específico
+   </div>
+ 
+   <div class="contenido">
+     <div class="filtros">
+       <label>
+         <input type="radio" name="filter2" on:change={() => updateChart(null)} checked>
+         Mostrar Todo
+       </label>
+       {#each [...new Set(facturasData.map(d => d.iva))] as iva}
+         <label>
+           <input type="radio" name="filter2" on:change={() => updateChart(iva)}>
+           {iva}%
+         </label>
+       {/each}
+     </div>
+ 
+     <svg id="iva-chart"></svg>
+   </div>
+ </div>
+ 
+ 

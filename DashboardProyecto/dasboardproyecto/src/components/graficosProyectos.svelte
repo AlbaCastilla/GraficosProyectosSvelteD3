@@ -25,7 +25,7 @@
   grid-template-columns: repeat(3, 1fr); /* Tres columnas */
   grid-auto-rows: minmax(auto, max-content); /* Ajustar automáticamente el tamaño de las filas */
   grid-gap: 10px;
-  width: 100vw;
+  width: 97.25vw;
   padding: 10px;
 }
 
@@ -38,8 +38,8 @@
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
   padding: 10px;
   background: rgba(240, 240, 240, 0.5);
-  overflow: auto; /* Para evitar que el contenido se desborde */
-  max-width: 100%; /* Que no se salga del grid */
+  overflow: auto; 
+  max-width: 100%; 
   max-height: 100%;
 }
 

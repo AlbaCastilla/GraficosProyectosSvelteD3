@@ -40,7 +40,9 @@
       .text((d) => d.data.sexo);
   }
 </script>
-
+<div style="text-align: center; font-size: 16px; font-weight: bold; margin-bottom: 10px;">
+  Distribución por Género
+</div>
 <svg id="pie-chart"></svg>
 
 <style>

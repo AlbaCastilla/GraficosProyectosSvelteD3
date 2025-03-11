@@ -82,7 +82,7 @@
     
         let data = [];
     
-        function contarFechas(fechas) {
+        /*function contarFechas(fechas) {
             const conteo = {};
             fechas.forEach(fecha => {
                 conteo[fecha] = (conteo[fecha] || 0) + 1;
@@ -90,7 +90,19 @@
     
             return Object.entries(conteo).map(([fecha, count]) => ({ fecha, count }));
         }
-    
+    */
+    function contarFechas(fechas) {
+    const conteo = {};
+    fechas.forEach(fecha => {
+        conteo[fecha] = (conteo[fecha] || 0) + 1;
+    });
+
+    return Object.entries(conteo)
+        .map(([fecha, count]) => ({ fecha, count }))
+        .sort((a, b) => new Date(a.fecha).getTime() - new Date(b.fecha).getTime()); // Convertimos a timestamp
+}
+
+
         onMount(async () => {
             await fetchUsoFechas();
     
@@ -157,8 +169,12 @@
                 .attr("fill", "steelblue");
         }
     </script>
-    
-    <svg id="chart"></svg>
+    <div class="grafico-fechas-estructura">
+    <div class="titulo-fechas" style="text-align: center; font-size: 16px; font-weight: bold; margin-bottom: 10px;">
+      Frecuencia de uso de la aplicación <br>
+      por fecha
+  </div>
+    <svg id="chart"></svg></div>
     
 <!--
    <script>

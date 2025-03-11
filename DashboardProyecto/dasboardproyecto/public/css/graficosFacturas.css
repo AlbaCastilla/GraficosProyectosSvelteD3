@@ -1,10 +1,10 @@
-.filtros {
+/* .filtros {
     padding: 10px;
     display: flex;
     flex-direction: column;
     gap: 15px;
     align-items: center;
-    border-radius: 10px; /* Bordes redondeados */
+    border-radius: 10px; 
     color: #64a6fc;
     left: 26%;
 }
@@ -36,7 +36,7 @@
 }
 
 .filtros label input[type="radio"] {
-    accent-color: #007BFF; /* Cambia el color del radio button */
+    accent-color: #007BFF; 
 }
 
 .filtros label input[type="radio"]:checked {
@@ -48,4 +48,60 @@
     height: 300px;
     width: 300px;
     margin-left: 6%;
+} */
+
+.contenedor-grafico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
 }
+
+.titulo-grafico {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Contenedor para filtros y gráfico en la misma línea */
+.contenido {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espaciado entre filtros y gráfico */
+    justify-content: center;
+    width: 100%;
+}
+
+/* Estilos para los filtros */
+.filtros {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    color: #64a6fc;
+    align-items: flex-start; /* Alinea los filtros a la izquierda */
+}
+
+.filtros label {
+    font-size: 1rem;
+    color: #333;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.filtros label input {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Gráfico SVG */
+#iva-chart {
+    height: 300px;
+    width: 300px;
+}
+
